@@ -33,7 +33,7 @@ func NewInt(i int) *Decimal {
 	return d
 }
 
-// Strings returns a string representaiton of this decimal with the specified precision
+// Strings returns a string representation of this decimal with the specified precision
 func (d *Decimal) String(prec int) string {
 	return (*big.Rat)(d).FloatString(prec)
 }
